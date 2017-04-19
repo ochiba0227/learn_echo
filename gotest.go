@@ -1,4 +1,4 @@
-package wajutsu
+package main
 
 import (
     "net/http"
