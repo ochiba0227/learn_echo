@@ -4,3 +4,10 @@ api_version: go1
 handlers:
 - url: /.*
   script: _go_app
+
+# ビルド対象から除外することでエラーを防げる
+# http://tweeeety.hateblo.jp/entry/2017/01/16/233249
+nobuild_files:
+  - src/gopkg.in
+  - src/golang.org
+  - src/github.com
