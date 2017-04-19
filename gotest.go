@@ -9,7 +9,7 @@ import (
 func init() {
     e := echo.New()
     e.GET("/", func(c echo.Context) error {
-        return c.String(http.StatusOK, "Hello, World!")
+        return c.String(http.StatusOK, "SGSG Hello, World!")
     })
     s := standard.New("")
     s.SetHandler(e)
